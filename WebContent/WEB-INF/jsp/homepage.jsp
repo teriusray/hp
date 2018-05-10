@@ -8,7 +8,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Estate &mdash; Free HTML5 Bootstrap Website Template by FreeHTML5.co</title>
+	<title>株式会社三和</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -79,11 +79,11 @@
 					<h1><a href="index.html">三和<span>.</span></a></h1>
 					<nav role="navigation">
 						<ul>
-							<li><a href="buy.html">事業内容</a></li>
-							<li><a href="rent.html">売買</a></li>
-							<li><a href="properties.html">賃貸</a></li>
-                            <li><a href="properties.html">会社概要</a></li>
-							<li class="cta"><a href="contact.html">お問合せ</a></li>
+							<li><a href="#business">事業内容</a></li>
+							<li><a href="#buy">売買</a></li>
+							<li><a href="#rent">賃貸</a></li>
+                            <li><a href="#summary">会社概要</a></li>
+							<li class="cta"><a href="#info">お問合せ</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -169,7 +169,7 @@
 	  	</div>
 	</aside>
 
-    <div id="fh5co-testimonial">
+    <div id="fh5co-testimonial"><a id="business"></a>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box" data-animate-effect="fadeIn">
@@ -219,7 +219,7 @@
         
     </div> -->
 
-    <div id="fh5co-blog">
+    <div id="fh5co-blog"><a id="buy"></a>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box" data-animate-effect="fadeIn">
@@ -332,7 +332,7 @@
         </div>
     </div>
 
-	<div id="best-deal">
+	<div id="best-deal"><a id="rent"></a>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" data-animate-effect="fadeIn">
@@ -505,7 +505,7 @@
 		</div>	
 	</div> -->
 
-	<div class="fh5co-cta" style="background-image: url(<c:url value='/resources/img/3/slide_4.jpg'/>);">
+	<div class="fh5co-cta" style="background-image: url(<c:url value='/resources/img/3/slide_4.jpg'/>);"><a id="summary"></a>
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="col-md-12 text-center animate-box" data-animate-effect="fadeIn">
@@ -517,7 +517,7 @@
 	</div>
 
 	
-	<footer id="fh5co-footer" role="contentinfo">
+	<footer id="fh5co-footer" role="contentinfo"><a id="info"></a>
 	
 		<div class="container">
 			<div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
@@ -532,8 +532,31 @@
 			</div>
 			<div class="col-md-6 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
 				<h3>Contact Us</h3>
-                <p>不動産に関するさまざまなサービスを行っております. </p>
-                <p><a href="#" class="btn btn-primary btn-outline with-arrow btn-sm">送　信 <i class="fab fa-telegram-plane"></i></a></p>
+                <p>
+	                <form>
+	                    <div class="form-group">
+	                        <label for="price">ご希望の価格</label>
+	                        <input id="price" type="text" class="form-control" placeholder="99,999,999">
+	                    </div>
+	
+                        <div class="form-group">
+                            <label for="name">お名前</label>
+                            <input id="name" type="text" class="form-control" placeholder="三和　太郎">
+                        </div>
+	
+                        <div class="form-group">
+                            <label for="telephone">電話番号</label>
+                            <input id="telephone" type="text" class="form-control" placeholder="(090)1234-5678">
+                        </div>
+	
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input id="email" type="email" class="form-control" placeholder="info@sanwa.co.jp">
+                        </div>
+	
+                        <a href="#" class="btn btn-primary btn-outline with-arrow btn-sm">送　信 <i class="fab fa-telegram-plane"></i></a>
+	                </form>
+                </p>
 
 			</div>
 
@@ -549,7 +572,7 @@
 			
 			
 			<div class="col-md-12 fh5co-copyright text-center">
-				<p>&copy; 2018 株式会社三和. All Rights Reserved. <span>Designed with <i class="fas fa-heart"></i> by Ray Demo Images by Ray </span></p>	
+				<p>&copy; 2018 株式会社三和. All Rights Reserved. <span>Designed with <i class="fas fa-heart"></i> by Ray, Demo Images by Ray </span></p>	
 			</div>
 			
 		</div>
