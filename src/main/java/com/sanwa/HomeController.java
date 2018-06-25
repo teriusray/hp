@@ -9,4 +9,10 @@ public class HomeController {
     public String index() {
         return "homepage";
     }
+    
+    @RequestMapping("/cn")
+    public String cnIndex() {
+        return "cn";
+    }
+    
 }
