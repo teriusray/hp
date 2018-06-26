@@ -69,6 +69,7 @@
 							<li><a href="#buy">売買</a></li>
 							<li><a href="#rent">賃貸</a></li>
                             <li><a href="#summary">会社概要</a></li>
+                            <li><a href="/Sanwa/cn">中文</a></li>
 							<li class="cta"><a href="#info">お問合せ</a></li>
 						</ul>
 					</nav>

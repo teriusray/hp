@@ -68,6 +68,7 @@
 							<li><a href="#buy">购房</a></li>
 							<li><a href="#rent">售后</a></li>
                             <li><a href="#summary">公司简介</a></li>
+                            <li><a href="/Sanwa/">日本語</a></li>
 							<li class="cta"><a href="#info">联系我们</a></li>
 						</ul>
 					</nav>
