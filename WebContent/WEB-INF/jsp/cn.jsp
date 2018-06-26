@@ -491,7 +491,7 @@
 	<script src="<c:url value='/resources/js/3/jquery.flexslider-min.js'/>"></script>
 
 	<!-- MAIN JS -->
-	<script src="<c:url value='/resources/js/3/main.js'/>"></script>
+	<script src="<c:url value='/resources/js/3/main_cn.js'/>"></script>
 
 	</body>
 </html>
