@@ -61,7 +61,6 @@
 		<div class="container">
 			<div class="row">
 				<div class="header-inner">
-					<!-- <h1><a href="index.html">三和<span>.</span></a></h1> -->
 					<img src="<c:url value='/resources/img/logo.png'/>" alt="" class="">
 					<nav role="navigation">
 						<ul>
@@ -544,18 +543,17 @@
 	<footer id="fh5co-footer" role="contentinfo"><a id="info"></a>
 	
 		<div class="container">
-			<div class="col-md-8 col-md-push-2 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0 text-center">
+			<div class="col-md-8 col-md-push-2 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+			<form id="infoForm">
 			<div class="form-horizontal" id="index_form">
-                <input type="hidden" name="action" value="post">
-                <input type="hidden" name="diyid" value="1">
-                <input type="hidden" name="do" value="2">
+                <input type="hidden" name="source" value="1">
 
                 <fieldset>
-                    <h2>ご希望情報</h2>
+                    <h2 class=" text-center">ご希望情報</h2>
                     <div class="form-group">
                         <label for="input1" class="col-lg-4 control-label">ご希望の価格（予算）</label>
                         <div class="col-lg-6">
-                            <input type="text" name="yusuan" class="form-control" id="input1" placeholder="">
+                            <input type="text" name="amount" class="form-control" id="input1" placeholder="">
                         </div>
                         <label for="input1" class="col-lg-2 control-label" style="text-align: left">万円くらい</label>
                     </div>
@@ -563,16 +561,16 @@
                         <label for="input1" class="col-lg-4 control-label">物件種別</label>
                         <div class="col-lg-6">
                             <label class="radio-inline">
-                                <input type="radio" name="leixing" id="inlineRadio1" value="マンション" checked=""> マンション
+                                <input type="radio" name="houseType" id="inlineRadio1" value="1" checked="checked"> マンション
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="leixing" id="inlineRadio2" value="戸建"> 戸建
+                                <input type="radio" name="houseType" id="inlineRadio2" value="2"> 戸建
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="leixing" id="inlineRadio3" value="一棟"> 一棟
+                                <input type="radio" name="houseType" id="inlineRadio3" value="3"> 一棟
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="leixing" id="inlineRadio4" value="その他"> その他
+                                <input type="radio" name="houseType" id="inlineRadio4" value="4"> その他
                             </label>
                         </div>
                     </div>
@@ -580,10 +578,10 @@
                         <label class="col-lg-4 control-label">購入目的</label>
                         <div class="col-lg-6">
                             <label class="radio-inline">
-                                <input type="radio" name="mudi" id="inlineRadio5" value="お住まい" checked="checked">お住まい
+                                <input type="radio" name="purpose" id="inlineRadio5" value="1" checked="checked">お住まい
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="mudi" id="inlineRadio6" value="投資">投資
+                                <input type="radio" name="purpose" id="inlineRadio6" value="2">投資
                             </label>
                         </div>
                     </div>
@@ -591,13 +589,13 @@
                         <label class="col-lg-4 control-label">エリア</label>
                         <div class="col-lg-6">
                             <label class="radio-inline">
-                                <input type="radio" name="weizhi" id="inlineRadio7" value="東京周辺" checked="">東京周辺
+                                <input type="radio" name="area" id="inlineRadio7" value="1" checked="checked">東京周辺
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="weizhi" id="inlineRadio8" value="大阪周辺">大阪周辺
+                                <input type="radio" name="area" id="inlineRadio8" value="2">大阪周辺
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="weizhi" id="inlineRadio9" value="その他">その他
+                                <input type="radio" name="area" id="inlineRadio9" value="3">その他
                             </label>
                         </div>
                     </div>
@@ -610,7 +608,7 @@
                     <div class="form-group">
                         <label for="input3" class="col-lg-4 control-label">電話番号</label>
                         <div class="col-lg-6">
-                            <input type="text" name="phone" class="form-control" id="input3" placeholder="">
+                            <input type="text" name="tel" class="form-control" id="input3" placeholder="">
                         </div>
                     </div>
                     <div class="form-group">
@@ -619,50 +617,19 @@
                             <input type="text" name="email" class="form-control" id="input4" placeholder="">
                         </div>
                     </div>
-                    <h2>その他の希望</h2>
+                    <h2 class=" text-center">その他の希望</h2>
                     <div class="form-group">
                         <label class="col-lg-11 col-lg-offset-1 col-xs-12">
-                            <textarea name="liuyan" class="form-control" rows="4"></textarea>
+                            <textarea id="textarea1" name="addition" class="form-control" rows="4"></textarea>
                         </label>
                     </div>
-                    <!-- <div class="form-group">
-                        <label class="col-lg-8 col-lg-offset-2 col-xs-12" style="font-size: 18px;text-align: center;font-weight: normal;">
-                            <input type="checkbox" name="tongyi" value="同意する">同意する
-                        </label>
-                        <p class="col-lg-12">個人情報保護方針（よくお読みのうえ同意された方はチェックボックスにチェックを入れてください）</p>
-                    </div> -->
-                    <input type="hidden" name="dede_fields" value="yusuan,text;leixing,radio;mudi,radio;weizhi,radio;name,text;phone,text;email,text;liuyan,multitext;tongyi,checkbox">
-                    <input type="hidden" name="dede_fieldshash" value="efb3986a72b02c20d44c5c61bf92ccd8">
-                    <button type="submit" name="submit" class="btn btn-primary btn-outline with-arrow btn-sm" id="form_action" onclick="check()">送　信 <i class="fab fa-telegram-plane"></i></button>
+
+                    <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-outline with-arrow btn-sm" id="form_action">送　信 <i class="fab fa-telegram-plane"></i></button>
+                    </div>
                 </fieldset>
             </div>
-<!-- 				<h2>ご希望情報</h2>
-                <p>
-	                <form>
-	                    <div class="form-group">
-	                        <label for="price">ご希望の価格</label>
-	                        <input id="price" type="text" class="form-control" placeholder="99,999,999">
-	                    </div>
-	
-                        <div class="form-group">
-                            <label for="name">お名前</label>
-                            <input id="name" type="text" class="form-control" placeholder="三和　太郎">
-                        </div>
-	
-                        <div class="form-group">
-                            <label for="telephone">電話番号</label>
-                            <input id="telephone" type="text" class="form-control" placeholder="(090)1234-5678">
-                        </div>
-	
-                        <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input id="email" type="email" class="form-control" placeholder="info@sanwa.co.jp">
-                        </div>
-	
-                        <a href="#" class="btn btn-primary btn-outline with-arrow btn-sm">送　信 <i class="fab fa-telegram-plane"></i></a>
-	                </form>
-                </p> -->
-
+            </form>
 			</div>
 			
 			<div class="col-md-12 fh5co-copyright text-center">

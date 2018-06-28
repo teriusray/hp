@@ -259,7 +259,51 @@
 		});
 	}
 
+	$('#form_action').click(function(event){
+		event.preventDefault();
+		var $this = $(this);
+		$this.prop('disabled', true);
+		if ($('#input3').val().trim() == '' && $('#input4').val().trim() == '') {
+			alert("请输入 电话号码 或 E-mail");
+			$this.prop('disabled', false);
+			return;
+		}
 
+		$.ajax({
+			type : "POST",
+			url : "/Sanwa/mail",
+			data: $("#infoForm").serialize(), 
+			success: function(result)
+	        {
+	            if (result == "success") {
+	            	alert("感谢您的咨询，我们将通过别的方式与您取得联系。");
+	            } else {
+	            	alert("实在抱歉，目前无法提交您的咨询信息。您可以直接拨打电话：03-6812-1998。");
+	            }
+	            $this.prop('disabled', false);
+	        },
+	        error: function (jqXHR, exception) {
+	        	alert("实在抱歉，目前无法提交您的咨询信息。您可以直接拨打电话：03-6812-1998。");
+	        	$this.prop('disabled', false);
+	        }
+		});
+
+		$('#input1').val("");
+		$('#input2').val("");
+		$('#input3').val("");
+		$('#input4').val("");
+		$('#inlineRadio1').prop('checked', true);
+		$('#inlineRadio2').prop('checked', false);
+		$('#inlineRadio3').prop('checked', false);
+		$('#inlineRadio4').prop('checked', false);
+		$('#inlineRadio5').prop('checked', true);
+		$('#inlineRadio6').prop('checked', false);
+		$('#inlineRadio7').prop('checked', true);
+		$('#inlineRadio8').prop('checked', false);
+		$('#inlineRadio9').prop('checked', false);
+		$('#textarea1').val("");
+
+	});
 	
 	$(function(){
 		fullHeight();

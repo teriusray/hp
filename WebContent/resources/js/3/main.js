@@ -259,8 +259,52 @@
 		});
 	}
 
+	$('#form_action').click(function(event){
+		event.preventDefault();
+		var $this = $(this);
+		$this.prop('disabled', true);
+		if ($('#input3').val().trim() == '' && $('#input4').val().trim() == '') {
+			alert("電話番号 と E-mailをいずれに入力してください");
+			$this.prop('disabled', false);
+			return;
+		}
 
-	
+		$.ajax({
+			type : "POST",
+			url : "/Sanwa/mail",
+			data: $("#infoForm").serialize(), 
+			success: function(result)
+	        {
+	            if (result == "success") {
+	            	alert("ご送信ありがとうございました、お問合せ内容は別途で返事させていただきます。");
+	            } else {
+	            	alert("大変申し訳ございません、現在、送信が利用できませんので、お問合せは03-6812-1998まで連絡していただけませんか？");
+	            }
+	            $this.prop('disabled', false);
+	        },
+	        error: function (jqXHR, exception) {
+	        	alert("大変申し訳ございません、現在、送信が利用できませんので、お問合せは03-6812-1998まで連絡していただけませんか？");
+	            $this.prop('disabled', false);
+	        }
+		});
+
+		$('#input1').val("");
+		$('#input2').val("");
+		$('#input3').val("");
+		$('#input4').val("");
+		$('#inlineRadio1').prop('checked', true);
+		$('#inlineRadio2').prop('checked', false);
+		$('#inlineRadio3').prop('checked', false);
+		$('#inlineRadio4').prop('checked', false);
+		$('#inlineRadio5').prop('checked', true);
+		$('#inlineRadio6').prop('checked', false);
+		$('#inlineRadio7').prop('checked', true);
+		$('#inlineRadio8').prop('checked', false);
+		$('#inlineRadio9').prop('checked', false);
+		$('#textarea1').val("");
+
+	});
+
 	$(function(){
 		fullHeight();
 		sliderMain();

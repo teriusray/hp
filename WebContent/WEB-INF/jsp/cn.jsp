@@ -380,17 +380,16 @@
 	
 		<div class="container">
 			<div class="col-md-8 col-md-push-2 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+			<form id="infoForm">
 			<div class="form-horizontal" id="index_form">
-                <input type="hidden" name="action" value="post">
-                <input type="hidden" name="diyid" value="1">
-                <input type="hidden" name="do" value="2">
+                <input type="hidden" name="source" value="2">
 
                 <fieldset>
                     <h2 class=" text-center">您的要求</h2>
                     <div class="form-group">
                         <label for="input1" class="col-lg-4 control-label">期望价格（预估）</label>
                         <div class="col-lg-6">
-                            <input type="text" name="yusuan" class="form-control" id="input1" placeholder="">
+                            <input type="text" name="amount" class="form-control" id="input1" placeholder="">
                         </div>
                         <label for="input1" class="col-lg-2 control-label" style="text-align: left">人民币左右</label>
                     </div>
@@ -398,16 +397,16 @@
                         <label for="input1" class="col-lg-4 control-label">房屋类型</label>
                         <div class="col-lg-6">
                             <label class="radio-inline">
-                                <input type="radio" name="leixing" id="inlineRadio1" value="マンション" checked=""> 公寓
+                                <input type="radio" name="houseType" id="inlineRadio1" value="1" checked="checked"> 公寓
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="leixing" id="inlineRadio2" value="戸建"> 独栋
+                                <input type="radio" name="houseType" id="inlineRadio2" value="2"> 独户
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="leixing" id="inlineRadio3" value="一棟"> 一栋
+                                <input type="radio" name="houseType" id="inlineRadio3" value="3"> 一栋
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="leixing" id="inlineRadio4" value="その他"> 其他
+                                <input type="radio" name="houseType" id="inlineRadio4" value="4"> 其它
                             </label>
                         </div>
                     </div>
@@ -415,10 +414,10 @@
                         <label class="col-lg-4 control-label">购买目的</label>
                         <div class="col-lg-6">
                             <label class="radio-inline">
-                                <input type="radio" name="mudi" id="inlineRadio5" value="お住まい" checked="checked">自住
+                                <input type="radio" name="purpose" id="inlineRadio5" value="1" checked="checked">自住
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="mudi" id="inlineRadio6" value="投資">投资
+                                <input type="radio" name="purpose" id="inlineRadio6" value="2">投资
                             </label>
                         </div>
                     </div>
@@ -426,13 +425,13 @@
                         <label class="col-lg-4 control-label">区域</label>
                         <div class="col-lg-6">
                             <label class="radio-inline">
-                                <input type="radio" name="weizhi" id="inlineRadio7" value="東京周辺" checked="">东京区域
+                                <input type="radio" name="area" id="inlineRadio7" value="1" checked="checked">东京区域
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="weizhi" id="inlineRadio8" value="大阪周辺">大阪区域
+                                <input type="radio" name="area" id="inlineRadio8" value="2">大阪区域
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="weizhi" id="inlineRadio9" value="その他">其它
+                                <input type="radio" name="area" id="inlineRadio9" value="3">其它
                             </label>
                         </div>
                     </div>
@@ -445,7 +444,7 @@
                     <div class="form-group">
                         <label for="input3" class="col-lg-4 control-label">电话号码</label>
                         <div class="col-lg-6">
-                            <input type="text" name="phone" class="form-control" id="input3" placeholder="">
+                            <input type="text" name="tel" class="form-control" id="input3" placeholder="">
                         </div>
                     </div>
                     <div class="form-group">
@@ -457,18 +456,16 @@
                     <h2 class=" text-center">其它要求</h2>
                     <div class="form-group">
                         <label class="col-lg-11 col-lg-offset-1 col-xs-12">
-                            <textarea name="liuyan" class="form-control" rows="4"></textarea>
+                            <textarea id="textarea1" name="addition" class="form-control" rows="4"></textarea>
                         </label>
                     </div>
 
-                    <input type="hidden" name="dede_fields" value="yusuan,text;leixing,radio;mudi,radio;weizhi,radio;name,text;phone,text;email,text;liuyan,multitext;tongyi,checkbox">
-                    <input type="hidden" name="dede_fieldshash" value="efb3986a72b02c20d44c5c61bf92ccd8">
                     <div class="text-center">
-                    <button type="submit" name="submit" class="btn btn-primary btn-outline with-arrow btn-sm" id="form_action" onclick="check()">提　交 <i class="fab fa-telegram-plane"></i></button>
+                        <button type="submit" class="btn btn-primary btn-outline with-arrow btn-sm" id="form_action">提　交 <i class="fab fa-telegram-plane"></i></button>
                     </div>
                 </fieldset>
             </div>
-
+            </form>
 			</div>
 			
 			<div class="col-md-12 fh5co-copyright text-center">

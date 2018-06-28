@@ -20,4 +20,45 @@
     <mvc:annotation-driven />
     <mvc:resources mapping="/resources/**" location="/resources/" />
 
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+	    <property name="host" value="smtp.gmail.com" />
+	    <property name="port" value="587" />
+        <property name="defaultEncoding" value="UTF-8" />
+	    <property name="username" value="teriusray@gmail.com" />
+	    <property name="password" value="Ykgoogle2018" />
+	    <property name="javaMailProperties">
+	         <props>
+	            <prop key="mail.smtp.auth">true</prop>
+	            <prop key="mail.smtp.starttls.enable">true</prop>
+                <!-- <prop key="mail.smtp.starttls.required">true</prop>
+                <prop key="mail.smtp.ssl.enable">true</prop> -->
+	         </props>
+	    </property>
+	</bean>
+
+	<bean id="simpleMailMessage" class="org.springframework.mail.SimpleMailMessage">
+	    <property name="from" value="teriusray@gmail.com" />
+	    <property name="to" value="87096609@qq.com" />
+	    <property name="subject" value="お問合せ" />
+	    <property name="text">
+	       <value>
+	        <![CDATA[
+三和株式会社担当さん
+
+%s様からの問合せをいただいたので、下記をご確認ください。
+
+ご希望の価格  ：%s
+物件種別        ：%s
+購入目的        ：%s
+エリア                ：%s
+電話番号        ：%s
+E-mail     ：%s
+その他の希望  ：
+        %s
+
+以上
+	        ]]>
+	       </value>
+	    </property>
+	</bean>
 </beans>
