@@ -25,7 +25,7 @@
 	<meta name="twitter:card" content="" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="<c:url value='/resources/img/favicon.ico'/>">
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
 	
@@ -92,13 +92,6 @@
                              	<span class="price">￥10,000,000 <a href="#" class="tag">登記資本金</a></span>
 	                        </div>
 	                        <p>171-0014 東京都豊島区西池袋.</p>
-
-	                       <!--   <p class="fh5co-property-specification">
-                        		<span><strong>3500</strong> Sq Ft</span>  <span><strong>3</strong> Beds</span>  <span><strong>3.5</strong> Baths</span>  <span><strong>2</strong> Garages</span>
-                        	</p>
-
-	                        <p><a href="#" class="btn btn-primary">Learn more</a></p> -->
-
 	   						</div>
 		   				</div>
 		   			</div>
@@ -117,10 +110,6 @@
 	                        ●国内外の不動産の売買・交換・賃借及びその仲介並びに所有。管理及び利用<br>
 	                        ●日中マーケティング調査業務<br>
 	                        </p>
-	                        <!--  <p class="fh5co-property-specification">
-                        		<span><strong>3500</strong> Sq Ft</span>  <span><strong>3</strong> Beds</span>  <span><strong>3.5</strong> Baths</span>  <span><strong>2</strong> Garages</span>
-                        	</p>
-	                        <p><a href="#" class="btn btn-primary">Learn more</a></p>-->
 	   						</div>
 		   				</div>
 		   			</div>
@@ -138,12 +127,6 @@
 	                        <p>
 	                           真剣に責任を負い、積極的にコミュニケーションを取り、高い責任感とプロフェッショナリズムで仕事を扱います。大切なお客様に最高のアフタサービスを提供できるように全力努めます.
 	                        </p>
-	                        <!--  <p class="fh5co-property-specification">
-                        		<span><strong>3500</strong> Sq Ft</span>  <span><strong>3</strong> Beds</span>  <span><strong>3.5</strong> Baths</span>  <span><strong>2</strong> Garages</span>
-                        	</p>
-	                        <p><a href="#" class="btn btn-primary">Learn more</a></p>-->
-
-
 	   						</div>
 		   				</div>
 		   			</div>
@@ -154,7 +137,7 @@
 	  	</div>
 	</aside>
 
-    <div id="fh5co-testimonial"><a id="business"></a>
+    <div id="fh5co-testimonial"><a class="anchor" id="business"></a>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box" data-animate-effect="fadeIn">
@@ -188,23 +171,7 @@
         </div>
     </div>
 
-
-    <!-- <div class="fh5co-section-with-image">
-        
-        <img src="<c:url value='/resources/img/3/image_1.jpg'/>" alt="" class="img-responsive">
-        <div class="fh5co-box animate-box">
-            <h2>売買</h2>
-            <p>不動産ご購入の流れを、8つのステップに分けてご説明します。
-				ご資金計画にはじまり、物件見学やご契約、
-				ご入居から確定申告にいたるまで、
-				疑問点や注意点をわかりやすくまとめました。
-				ご購入を検討されている お客さまはぜひご一読下さい。.</p>
-            <p><a href="#" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
-        </div>
-        
-    </div> -->
-
-    <div id="fh5co-blog"><a id="buy"></a>
+    <div id="fh5co-blog"><a class="anchor" id="buy"></a>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box" data-animate-effect="fadeIn">
@@ -271,14 +238,6 @@
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading white">
                     <h2 class="animate-box" data-animate-effect="fadeIn">売買流れ</h2>
                          <div class="step animate-box" data-animate-effect="fadeIn">
-					          <!-- <ul class="progressbar">
-					            <li class="active">相談</li>
-					            <li>契約準備</li>
-					            <li>金額交渉</li>
-					            <li>契約</li>
-					            <li>決済</li>
-					          </ul> -->
-
 					          <ul class="progressImg">
                                 <li class="active"><img src="<c:url value='/resources/img/house/flow/01_c.png'/>">相談</li>
                                 <li><img src="<c:url value='/resources/img/house/flow/02.png'/>">契約準備</li>
@@ -326,7 +285,7 @@
         </div>
     </div>
 
-	<div id="best-deal"><a id="rent"></a>
+	<div id="best-deal"><a class="anchor" id="rent"></a>
 		<div class="container">
 		   <div class="row">
 		        <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" data-animate-effect="fadeIn">
@@ -358,178 +317,10 @@
                     <h3>税金</h3>
                 </div>
 		   </div>
-<%-- 			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" data-animate-effect="fadeIn">
-					<h2>賃貸</h2>
-					<p>賃貸マンション・賃貸アパートの賃貸住宅お部屋探しなら、（株）フューチャーリーディングにお任せ下さい。新築賃貸や分譲賃貸など人気物件の空き状況やこんな貸家に住みたいというご希望に合う賃貸情報を見つけていただけるよう、（株）フューチャーリーディングは様々な切り口で家探しをサポートいたします。 </p>
-				</div>
-				<div class="col-md-4 item-block animate-box" data-animate-effect="fadeIn">
-
-
-					<div class="fh5co-property">
-						<figure>
-							<img src="<c:url value='/resources/img/house/1.jpg'/>" alt="Free Website Templates FreeHTML5.co" class="img-responsive">
-							<a href="#" class="tag">For Rent</a>
-						</figure>
-						<div class="fh5co-property-innter">
-							<h3><a href="#">浅草</a></h3>
-							<div class="price-status">
-		                 	<span class="price">￥7.65万<span class="per">/月</span> </span>
-		               </div>
-		               <p>築浅（1年未満）、敷金礼金ゼロ、南向き、２階以上、最上階、ペット可（相談）、保証人不要.</p>
-	            	</div>
-	            	<p class="fh5co-property-specification">
-	            		<span><strong>56.81</strong> m2</span>  <span><strong>1</strong> リビング</span>  <span><strong>0.5</strong> 食事室</span>  <span><strong>1</strong> 台所</span>
-	            	</p>
-					</div>
-
-					
-				</div>
-				<div class="col-md-4 item-block animate-box" data-animate-effect="fadeIn">
-
-					<div class="fh5co-property">
-						<figure>
-							<img src="<c:url value='/resources/img/house/2.jpg'/>" alt="Free Website Templates FreeHTML5.co" class="img-responsive">
-							<a href="#" class="tag">For Rent</a>
-						</figure>
-						<div class="fh5co-property-innter">
-							<h3><a href="#">大阪市北区</a></h3>
-							<div class="price-status">
-		                 	<span class="price">￥8.04万<span class="per">/月</span> </span>
-		               </div>
-		               <p>TVモニタ付インターホン、室内洗濯機置場、フローリング、駐輪場あり、バイク置き場、バルコニー、シューズボックス、敷地内ゴミ置き場、事務所利用不可.</p>
-	            	</div>
-	            	<p class="fh5co-property-specification">
-                        <span><strong>56.81</strong> m2</span>  <span><strong>1</strong> リビング</span>  <span><strong>0.5</strong> 食事室</span>  <span><strong>1</strong> 台所</span>
-	            	</p>
-					</div>
-					
-				</div>
-				<div class="col-md-4 item-block animate-box" data-animate-effect="fadeIn">
-
-					<div class="fh5co-property">
-						<figure>
-							<img src="<c:url value='/resources/img/house/3.jpg'/>" alt="Free Website Templates FreeHTML5.co" class="img-responsive">
-							<a href="#" class="tag">For Rent</a>
-						</figure>
-						<div class="fh5co-property-innter">
-							<h3><a href="#">京都</a></h3>
-							<div class="price-status">
-		                 	<span class="price">￥6.85万<span class="per">/月</span> </span>
-		               </div>
-		               <p>バス・トイレ別、追い焚き、温水洗浄便座、浴室乾燥機、エアコン、ウォークインクローゼット、BSアンテナ.</p>
-	            	</div>
-	            	<p class="fh5co-property-specification">
-                        <span><strong>56.81</strong> m2</span>  <span><strong>1</strong> リビング</span>  <span><strong>0.5</strong> 食事室</span>  <span><strong>1</strong> 台所</span>
-	            	</p>
-					</div>
-				</div>
-
-
-			</div> --%>
 		</div>
 	</div>
 
-
- 	<!-- <div id="fh5co-agents">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading white animate-box" data-animate-effect="fadeIn">
-					<h2>Our Trusted Agents</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-				</div>
-				<div class="col-md-4 text-center item-block animate-box" data-animate-effect="fadeIn">
-
-					<div class="fh5co-agent">
-						<figure>
-							<img src="<c:url value='/resources/img/3/testimonial_person2.jpg'/>" alt="Free Website Template by FreeHTML5.co">
-						</figure>
-						<h3>John Doe</h3>
-						<p>Veniam laudantium rem odio quod, beatae voluptates natus animi fugiat provident voluptatibus. Debitis assumenda, possimus ducimus omnis.</p>
-						<p><a href="#" class="btn btn-primary btn-outline">Contact Me</a></p>
-					</div>
-					
-				</div>
-				<div class="col-md-4 text-center item-block animate-box" data-animate-effect="fadeIn">
-					<div class="fh5co-agent">
-						<figure>
-							<img src="<c:url value='/resources/img/3/testimonial_person3.jpg'/>" alt="Free Website Template by FreeHTML5.co">
-						</figure>
-						<h3>John Doe</h3>
-						<p>Veniam laudantium rem odio quod, beatae voluptates natus animi fugiat provident voluptatibus. Debitis assumenda, possimus ducimus omnis.</p>
-						<p><a href="#" class="btn btn-primary btn-outline">Contact Me</a></p>
-					</div>
-				</div>
-				<div class="col-md-4 text-center item-block animate-box" data-animate-effect="fadeIn">
-					<div class="fh5co-agent">
-						<figure>
-							<img src="<c:url value='/resources/img/3/testimonial_person4.jpg'/>" alt="Free Website Template by FreeHTML5.co">
-						</figure>
-						<h3>John Doe</h3>
-						<p>Veniam laudantium rem odio quod, beatae voluptates natus animi fugiat provident voluptatibus. Debitis assumenda, possimus ducimus omnis.</p>
-						<p><a href="#" class="btn btn-primary btn-outline">Contact Me</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-
-	<div id="fh5co-blog">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box" data-animate-effect="fadeIn">
-					<h2>Latest <em>from</em> Blog</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 animate-box" data-animate-effect="fadeIn">
-					<a class="fh5co-entry" href="#">
-						<figure>
-						<img src="<c:url value='/resources/img/3/slide_4.jpg'/>" alt="Free Website Template, Free HTML5 Bootstrap Template" class="img-responsive">
-						</figure>
-						<div class="fh5co-copy">
-							<h3>We Create Awesome Free Templates</h3>
-							<span class="fh5co-date">June 8, 2016</span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 animate-box" data-animate-effect="fadeIn">
-					<a class="fh5co-entry" href="#">
-						<figure>
-						<img src="<c:url value='/resources/img/3/slide_5.jpg'/>" alt="Free Website Template, Free HTML5 Bootstrap Template" class="img-responsive">
-						</figure>
-						<div class="fh5co-copy">
-							<h3>Handcrafted Using CSS3 &amp; HTML5</h3>
-							<span class="fh5co-date">June 8, 2016</span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 animate-box" data-animate-effect="fadeIn">
-					<a class="fh5co-entry" href="#">
-						<figure>
-						<img src="<c:url value='/resources/img/3/slide_6.jpg'/>" alt="Free Website Template, Free HTML5 Bootstrap Template" class="img-responsive">
-						</figure>
-						<div class="fh5co-copy">
-							<h3>We Try To Update The Site Everyday</h3>
-							<span class="fh5co-date">June 8, 2016</span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-12 text-center animate-box" data-animate-effect="fadeIn">
-					<p><a href="#" class="btn btn-primary btn-outline with-arrow">View More Posts <i class="icon-arrow-right"></i></a></p>
-				</div>
-			</div>
-		</div>	
-	</div> -->
-
-	<div class="fh5co-cta"><a id="summary"></a>
+	<div class="fh5co-cta"><a class="anchor" id="summary"></a>
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="col-md-12 text-center animate-box" data-animate-effect="fadeIn">
@@ -540,7 +331,7 @@
 		</div>
 	</div>
 	
-	<footer id="fh5co-footer" role="contentinfo"><a id="info"></a>
+	<footer id="fh5co-footer" role="contentinfo"><a class="anchor" id="info"></a>
 	
 		<div class="container">
 			<div class="col-md-8 col-md-push-2 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">

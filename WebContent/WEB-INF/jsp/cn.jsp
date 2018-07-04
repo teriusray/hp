@@ -25,7 +25,7 @@
 	<meta name="twitter:card" content="" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="<c:url value='/resources/img/favicon.ico'/>">
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
 	
@@ -137,7 +137,7 @@
 	  	</div>
 	</aside>
 
-    <div id="fh5co-testimonial"><a id="business"></a>
+    <div id="fh5co-testimonial"><a class="anchor" id="business"></a>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box" data-animate-effect="fadeIn">
@@ -188,7 +188,7 @@
         </div>
     </div>
 
-    <div id="fh5co-blog"><a id="buy"></a>
+    <div id="fh5co-blog"><a class="anchor" id="buy"></a>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box" data-animate-effect="fadeIn">
@@ -208,7 +208,7 @@
                             <h3>浅草</h3>
                             <span class="fh5co-date">2017年　新築</span>
                             <p>
-                                                                          東急目黒線 不動前駅  徒歩7分<br>
+                                東急目黒線 不動前駅  徒歩7分<br>
 								山手線 目黒駅  徒歩11分<br>
 								山手線 五反田駅  徒歩16分<br>
 							</p>
@@ -272,15 +272,6 @@
                             3.印章<br>
                             4.购房委托书
                         </p>
-<!-- 	                    <p>
-	                       外国人在日本购买房产时所需资料<br>
-	          <ol>
-	               <li>个人信息公证书（姓名，性别，出生年月日，现住所，身份证号等）</li>
-                   <li>印章证明书代替资料</li>
-                   <li>印章</li>
-                   <li>购房委托书</li>
-	          </ol>
-	                    </p> -->
 	                    <!-- 相談 -->
                         <p>
                             査定終了後、売却の意思が固まりましたら、弊社と媒介契約を結びます。 お客様がご所有不動産の売却を不動産仲介業者に依頼する契約を結ぶことです。媒介契約書には次の３種類があります。
@@ -315,7 +306,7 @@
         </div>
     </div>
 
-	<div id="best-deal"><a id="rent"></a>
+	<div id="best-deal"><a class="anchor" id="rent"></a>
 		<div class="container">
 		   <div class="row">
 		        <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" data-animate-effect="fadeIn">
@@ -350,7 +341,7 @@
 		</div>
 	</div>
 
-	<div class="fh5co-cta"><a id="summary"></a>
+	<div class="fh5co-cta"><a class="anchor" id="summary"></a>
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="col-md-12 text-center animate-box" data-animate-effect="fadeIn">
@@ -376,7 +367,7 @@
 		</div>
 	</div>
 	
-	<footer id="fh5co-footer" role="contentinfo"><a id="info"></a>
+	<footer id="fh5co-footer" role="contentinfo"><a class="anchor" id="info"></a>
 	
 		<div class="container">
 			<div class="col-md-8 col-md-push-2 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
