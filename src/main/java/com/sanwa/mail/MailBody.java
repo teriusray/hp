@@ -1,28 +1,28 @@
 package com.sanwa.mail;
 
 public class MailBody {
-    private int source;         // 送信元                          1:日本、 2:中国
-    private String amount;      // ご希望の価格（予算）
+    private int source; // 送信元 1:日本、 2:中国
+    private String amount; // ご希望の価格（予算）
     private String amountDesc;
-    private int houseType;      // 物件種別                      1:マンション、2:戸建、3:一棟、4:その他
+    private int houseType; // 物件種別 1:マンション、2:戸建、3:一棟、4:その他
     private String houseTypeDesc;
-    private int purpose;        // 購入目的                      1:お住まい、2:投資
+    private int purpose; // 購入目的 1:お住まい、2:投資
     private String purposeDesc;
-    private int area;           // エリア                              1:東京周辺、2:大阪周辺、3:その他
+    private int area; // エリア 1:東京周辺、2:大阪周辺、3:その他
     private String areaDesc;
-    private String name;        // お名前
-    private String tel;         // 電話番号
-    private String email;       // E-mail
-    private String addition;    // その他の希望
+    private String name; // お名前
+    private String tel; // 電話番号
+    private String email; // E-mail
+    private String addition; // その他の希望
 
     public MailBody transform() {
         if (source == 1) {
-            amountDesc = amount + '円';
+            amountDesc = amount + "万円";
         } else {
-            amountDesc = amount + '元';
+            amountDesc = amount + "万元";
         }
 
-        switch(houseType) {
+        switch (houseType) {
         case 1:
             if (source == 1) {
                 houseTypeDesc = "マンション";
@@ -53,7 +53,7 @@ public class MailBody {
             break;
         }
 
-        switch(purpose) {
+        switch (purpose) {
         case 1:
             if (source == 1) {
                 purposeDesc = "お住まい";
@@ -70,7 +70,7 @@ public class MailBody {
             break;
         }
 
-        switch(area) {
+        switch (area) {
         case 1:
             if (source == 1) {
                 areaDesc = "東京周辺";

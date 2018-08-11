@@ -8,7 +8,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>株式会社三和</title>
+	<title>三和株式会社</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="三和株式会社" />
 	<meta name="keywords" content="sanwa, house, 不動産" />
@@ -68,7 +68,7 @@
 							<li><a href="#buy">购房</a></li>
 							<li><a href="#rent">售后</a></li>
                             <li><a href="#summary">公司简介</a></li>
-                            <li><a href="/Sanwa/">日本語</a></li>
+                            <li><a href="<c:url value='/'/>">日本語</a></li>
 							<li class="cta"><a href="#info">联系我们</a></li>
 						</ul>
 					</nav>
@@ -102,13 +102,14 @@
 		   			<div class="col-md-12 text-center js-fullheight fh5co-property-brief slider-text">
 		   				<div class="fh5co-property-brief-inner">
 		   					<div class="fh5co-box">
-		   						<h3><a href="#">事業内容</a></h3>
+		   						<h3><a href="#">事业内容</a></h3>
 		   						<div class="price-status">
-                             	      <span class="price">お客様に様々なサービスをご提供 <a href="#" class="tag">理念</a></span>
+                             	      <span class="price">为客人提供关于日本房地产相关的各种服务 <a href="#" class="tag">理念</a></span>
 	                            </div>
 			                      <p>
-			                      ●国内外の不動産の売買・交換・賃借及びその仲介並びに所有。管理及び利用<br>
-			                      ●日中マーケティング調査業務<br>
+			                      ●日本房地产的投资，买卖，交换，租赁等中介业务<br>
+			                      ●房地产管理相关业务<br>
+                                  ●售后业务<br>
 			                      </p>
 	   						</div>
 		   				</div>
@@ -120,12 +121,12 @@
 		   			<div class="col-md-12 text-center js-fullheight fh5co-property-brief slider-text">
 		   				<div class="fh5co-property-brief-inner">
 		   					<div class="fh5co-box">
-		   						<h3><a href="#">営業チーム</a></h3>
+		   						<h3><a href="#">营销团队</a></h3>
 		   						<div class="price-status">
-                             	<span class="price">10年以上の不動産販売 <a href="#" class="tag">専門</a></span>
+                             	<span class="price">房地产买卖·租赁·管理团队 <a href="#" class="tag">专业</a></span>
 	                        </div>
 	                        <p>
-	                           真剣に責任を負い、積極的にコミュニケーションを取り、高い責任感とプロフェッショナリズムで仕事を扱います。大切なお客様に最高のアフタサービスを提供できるように全力努めます.
+	                           三和作为专业的房地产投资公司，拥有专业的服务团队，提供无时差高效率，中日双语服务。再加上项目丰富的渠道，避免平台加价，节约沟通时间。加上严格把关的筛选流程，以及正规的房产委托管理经验，是您海外投资的不二选择。
 	                        </p>
 	   						</div>
 		   				</div>
@@ -140,14 +141,18 @@
     <div id="fh5co-testimonial"><a class="anchor" id="business"></a>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box" data-animate-effect="fadeIn">
-                    <h2>公司业务</h2>
+                <div class="col-md-6 col-md-offset-3 fh5co-heading animate-box" data-animate-effect="fadeIn">
+                    <div class="text-center">
+                        <h2>公司业务</h2>
+                    </div>
                     <p>三和作为专业的房地产投资公司拥有专业的服务团队，提供无时差高效率，中日双语服务。再加上项目丰富的渠道避免平台加价，节约沟通时间。加上流程严格把关的筛选流程，以及正规的房产委托管理经验。是您海外投资的不二选择。</p>
                 </div>
-                <div class="col-md-4 text-center item-block animate-box" data-animate-effect="fadeIn">
+                <div class="col-md-4 item-block animate-box" data-animate-effect="fadeIn">
                     <blockquote>
                         <p>
-                            <h3>房地产买卖</h3>
+                            <div class="text-center">
+                                <h3>房地产买卖</h3>
+                            </div>
                             <ul>
                                 <li>二手房产买卖</li>
                                 <li>新建房产买卖</li>
@@ -157,10 +162,12 @@
                         </p>
                     </blockquote>
                 </div>
-                <div class="col-md-4 text-center item-block animate-box" data-animate-effect="fadeIn">
+                <div class="col-md-4 item-block animate-box" data-animate-effect="fadeIn">
                     <blockquote>
                         <p>
-                            <h3>房地产管理</h3>
+                            <div class="text-center">
+                                <h3>房地产管理</h3>
+                            </div>
                             <ul>
                                 <li>代理签约</li>
                                 <li>租赁管理委托</li>
@@ -170,11 +177,13 @@
                         </p>
                     </blockquote>
                 </div>
-                <div class="col-md-4 text-center item-block animate-box" data-animate-effect="fadeIn">
+                <div class="col-md-4 item-block animate-box" data-animate-effect="fadeIn">
 
                     <blockquote>
                         <p>
-                            <h3>相关业务支持</h3>
+                            <div class="text-center">
+                                <h3>相关业务支持</h3>
+                            </div>
                             <ul>
                                 <li>税务业务</li>
                                 <li>贷款业务</li>
@@ -264,42 +273,39 @@
                               </ul>
 
 					     </div>
-					<div id="buyFlow" class="animate-box" data-animate-effect="fadeInLeft">
+					<div id="buyFlow" class="animate-box row" data-animate-effect="fadeInLeft">
+					<div class="col-lg-10 col-lg-offset-1" style="text-align:left">
 					    <p>
-                           外国人在日本购买房产时所需资料：<br><br>
+                           购房预算<br>
+                           与三和房地产负责人沟通<br>
+                           物件选定
+                        </p>
+	                    <!-- 相談 -->
+                        <p>
+                           购房资料准备：<br>
                             1.个人信息公证书（姓名，性别，出生年月日，现住所，身份证号等）<br>
                             2.印章证明书代替资料<br>
                             3.印章<br>
                             4.购房委托书
-                        </p>
-	                    <!-- 相談 -->
-                        <p>
-                            査定終了後、売却の意思が固まりましたら、弊社と媒介契約を結びます。 お客様がご所有不動産の売却を不動産仲介業者に依頼する契約を結ぶことです。媒介契約書には次の３種類があります。
-							<br><br>
-							専属専任媒介契約<br>
-							専任媒介契約<br>
-							一般媒介契約<br>
-							※詳しくは、営業担当者へお問い合わせください。
+							<br><br><br>
+							购房定金准备：<br>
+							一般为房地产价格的10%
                         </p>
                         <!-- 契約準備 -->
                         <p>
-                            物件案内・商談等を通じ価格交渉を行います。買主様よりご提示頂きました金額については、随時売主様にご報告させて頂きます。 またどのくらいの問い合わせ件数があったか、その反応等をご報告いたします。 買主様から「購入申込書」を受領し、売主様の希望価格や物件のお引渡し等の条件について調整を行います。 売主様、買主様の両者の価格・条件が合意となりましたら、売買契約書を交わす準備に入ります。
+                            非日本籍以及非日本居住者也可贷款。<br>
+                            详情请咨询三和房地产负责人<br>
                         </p>
                         <!-- 金額交渉 -->
                         <p>
-                            売主様・買主様の合意金額を元に売買契約の締結を行います。 売買契約が締結されますと、契約書に記載された金額・条文に基づいて売主・買主が双方の権利や義務を履行することになります。
-							<br>
-							※）売買契約時必要書類<br>
-							権利証<br>
-							ご実印<br>
-							ご本人確認が出来る書類（運転免許証・パスポート等）<br>
-							収入印紙（売買価格により異なります）<br>
+                            签订购房契约，支付定金
 						</p>
                         <!-- 契約 -->
                         <p>
-                            物件の残代金決済・お引渡しです。 残代金の授受・鍵の引渡しを行い、当日中に法務局に所有権移転登記等の申請を行うため、決済は平日の午前中に行うのが一般的です。 ご売却物件の移転登録手続きと同時に代金をお客さまへお支払いいたします。ローンのご残積がある場合は、完済資金として手配いたします。 各金融機関との手続きもご協力いたします。
+                            交付尾款，产权登记，交房。
                         </p>
                         <!-- 決済 -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -313,29 +319,31 @@
                     <h2>售后服务</h2>
                     <p>在购入房产后，为了让您足不出户就能掌握您的房产情况，三和会提供各方面售后服务，处理各种房产相关问题。</p>
                 </div>
+                <div class="col-md-offset-2">
                 <div class="col-md-3 item-block animate-box text-center" data-animate-effect="fadeIn">
                     <figure>
-                        <img src="<c:url value='/resources/img/house/service/management.png'/>" alt="マネジメント" class="img-responsive">
+                        <img src="<c:url value='/resources/img/house/service/management.png'/>" alt="マネジメント" class="img-responsive center-img">
                     </figure>
 					<h3>租金管理</h3>
                 </div>
                 <div class="col-md-3 item-block animate-box text-center" data-animate-effect="fadeIn">
                     <figure>
-                        <img src="<c:url value='/resources/img/house/service/clean.png'/>" alt="家事代行" class="img-responsive">
+                        <img src="<c:url value='/resources/img/house/service/clean.png'/>" alt="家事代行" class="img-responsive center-img">
                     </figure>
                     <h3>清扫改建</h3>
                 </div>
                 <div class="col-md-3 item-block animate-box text-center" data-animate-effect="fadeIn">
                     <figure>
-                        <img src="<c:url value='/resources/img/house/service/rent.png'/>" alt="賃貸" class="img-responsive">
+                        <img src="<c:url value='/resources/img/house/service/rent.png'/>" alt="賃貸" class="img-responsive center-img">
                     </figure>
                     <h3>退租招租</h3>
                 </div>
                 <div class="col-md-3 item-block animate-box text-center" data-animate-effect="fadeIn">
                     <figure>
-                        <img src="<c:url value='/resources/img/house/service/tax.png'/>" alt="税金" class="img-responsive">
+                        <img src="<c:url value='/resources/img/house/service/tax.png'/>" alt="税金" class="img-responsive center-img">
                     </figure>
                     <h3>税务业务</h3>
+                </div>
                 </div>
 		   </div>
 		</div>
@@ -371,21 +379,21 @@
 	
 		<div class="container">
 			<div class="col-md-8 col-md-push-2 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
-			<form id="infoForm">
+			<form id="infoForm" action="<c:url value='/mail'/>">
 			<div class="form-horizontal" id="index_form">
                 <input type="hidden" name="source" value="2">
 
                 <fieldset>
                     <h2 class=" text-center">您的要求</h2>
                     <div class="form-group">
-                        <label for="input1" class="col-lg-4 control-label">期望价格（预估）</label>
+                        <label for="input1" class="col-lg-3 control-label">期望价格（预估）</label>
                         <div class="col-lg-6">
                             <input type="text" name="amount" class="form-control" id="input1" placeholder="">
                         </div>
-                        <label for="input1" class="col-lg-2 control-label" style="text-align: left">人民币左右</label>
+                        <label for="input1" class="col-lg-2 control-label" style="text-align: left">万人民币左右</label>
                     </div>
                     <div class="form-group">
-                        <label for="input1" class="col-lg-4 control-label">房屋类型</label>
+                        <label for="input1" class="col-lg-3 control-label">房屋类型</label>
                         <div class="col-lg-6">
                             <label class="radio-inline">
                                 <input type="radio" name="houseType" id="inlineRadio1" value="1" checked="checked"> 公寓
@@ -402,7 +410,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-lg-4 control-label">购买目的</label>
+                        <label class="col-lg-3 control-label">购买目的</label>
                         <div class="col-lg-6">
                             <label class="radio-inline">
                                 <input type="radio" name="purpose" id="inlineRadio5" value="1" checked="checked">自住
@@ -413,7 +421,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-lg-4 control-label">区域</label>
+                        <label class="col-lg-3 control-label">区域</label>
                         <div class="col-lg-6">
                             <label class="radio-inline">
                                 <input type="radio" name="area" id="inlineRadio7" value="1" checked="checked">东京区域
@@ -427,26 +435,26 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="input2" class="col-lg-4 control-label">您的称呼</label>
+                        <label for="input2" class="col-lg-3 control-label">您的称呼</label>
                         <div class="col-lg-6">
                             <input type="text" name="name" class="form-control" id="input2" placeholder="">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="input3" class="col-lg-4 control-label">电话号码</label>
+                        <label for="input3" class="col-lg-3 control-label">电话号码</label>
                         <div class="col-lg-6">
                             <input type="text" name="tel" class="form-control" id="input3" placeholder="">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="input4" class="col-lg-4 control-label">E-mail</label>
+                        <label for="input4" class="col-lg-3 control-label">E-mail</label>
                         <div class="col-lg-6">
                             <input type="text" name="email" class="form-control" id="input4" placeholder="">
                         </div>
                     </div>
                     <h2 class=" text-center">其它要求</h2>
                     <div class="form-group">
-                        <label class="col-lg-11 col-lg-offset-1 col-xs-12">
+                        <label class="col-lg-10 col-lg-offset-1 col-xs-12">
                             <textarea id="textarea1" name="addition" class="form-control" rows="4"></textarea>
                         </label>
                     </div>
